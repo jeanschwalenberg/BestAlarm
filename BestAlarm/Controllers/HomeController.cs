@@ -5,20 +5,14 @@ using System.Web;
 using System.Web.Mvc;
 using BestAlarm.Models;
 
-namespace BestAlarm.Controllers
-{
-    public class HomeController : Controller
-    {
-        public ActionResult UserMaker() {
-            User babyUser = new User() {
+namespace BestAlarm.Controllers {
 
-            }
-        }
+    public class HomeController : Controller {
 
         // GET: Home
-        public ActionResult Index()
-        {
-            return View();
+        //TODO thingy so passing User through Index() actually passes alarm table/array/whatever
+        public ActionResult Index() {
+            return View(User);
         }
     }
 }
